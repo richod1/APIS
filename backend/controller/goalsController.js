@@ -3,7 +3,7 @@
 //@access Private
 
 
-const getGoals=(req,res)=>{
+const getGoals= async (req,res)=>{
 
     
     res.status(200).json({message:' Get goals'})
@@ -14,7 +14,7 @@ const getGoals=(req,res)=>{
 //@access Private
 
 
-const setGoal=(req,res)=>{
+const setGoal= async(req,res)=>{
     if(!req.body.text){
         res.status(400)
         throw new Error('Please add a new field')
@@ -27,7 +27,7 @@ res.status(200).json({message:'set goals'})
 //@access Private
 
 
-const updateGoals=(req,res)=>{
+const updateGoals= async(req,res)=>{
     res.status(200).json({message:`Update goal ${req.params.id}`})
 }
 
@@ -36,7 +36,7 @@ const updateGoals=(req,res)=>{
 //@access Private
 
 
-const deleteGoals=(req,res)=>{
+const deleteGoals=async(req,res)=>{
 res.status(200).json({message:`delete goal ${req.params.id}`})
 }
 
