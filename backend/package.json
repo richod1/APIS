@@ -1,0 +1,18 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "node backend",
+  "main": "sever.js",
+  "scripts": {
+    "start": "node backend/sever.js",
+    "server":"nodemon backend/sever.js"
+  },
+  "author": "degraft frimpong",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0"
+  }
+}
