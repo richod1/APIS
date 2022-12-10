@@ -12,6 +12,6 @@ timestamps:true,
 }
 )
 
-module.exports=mongoose.nodel('Goal',goalSchema)
+module.exports=mongoose.model('Goal',goalSchema)
 
 
